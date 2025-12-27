@@ -459,10 +459,8 @@
     enableGemBool: true
     gemColorG: true
     gemColorB: true
-    gemAbsorptionR: true
     gemAbsorptionG: true
     gemAbsorptionB: true
-    gemMeshIdR: true
     gemMeshIdG: true
     gemMeshIdB: true
     enableMakeupBool: true
@@ -470,6 +468,7 @@
     enableMakeupEyelinerBool: true
     enableMakeupBlushBool: true
     enableMakeupLipsBool: true
+    enableMakeupStickersBool: true
     makeupEyelinerColor: true
     makeupEyelashesColor: true
     makeupBlushColor: true
@@ -489,7 +488,6 @@
     makeupLipsGlitterIntensity: true
     makeupLipsGlitterNdfParams: true
     makeupLipsGlitterUseNDFMap: true
-    makeupStickersSize: true
     makeupStickersRotation: true
     enableHairBool: true
     hairColor: true
@@ -499,8 +497,6 @@
     hairAugmentationRotationAngle: true
     hairAugmentationRotationOffset: true
     hairAugmentationDistributionType: true
-    enableEnvironmentBool: true
-    enableSparklesBool: true
     sparkleNumArms: true
     sparkleTaper: true
     sparkleSoftness: true
@@ -533,21 +529,21 @@
       presetName: Base
       isCustom: true
       enableGemBool: true
-      gemColorR: !<Vec3> {x: 0.400000, y: 0.740000, z: 0.925000}
+      gemColorR: !<Vec3> {x: 1.000000, y: 0.964706, z: 0.466667}
       gemColorG: !<Vec3> {x: 0.500000, y: 0.800000, z: 1.000000}
       gemColorB: !<Vec3> {x: 1.000000, y: 0.700000, z: 0.900000}
-      gemAbsorptionR: !<float> 3.000000
+      gemAbsorptionR: 7.050000
       gemAbsorptionG: !<float> 3.000000
       gemAbsorptionB: !<float> 3.000000
-      gemIndexOfRefractionR: 2.420000
+      gemIndexOfRefractionR: 1.690000
       gemIndexOfRefractionG: 2.420000
       gemIndexOfRefractionB: 2.420000
-      scatteringDataTexString: ""
-      sourceTexString: ""
-      scatteringInstanceCount: 0
-      scatteringRadiusMinMaxPercent: !<Vec2> {x: 0.010000, y: 0.050000}
-      scatteringScale: !<float> 3.000000
-      gemMeshIdR: 0
+      scatteringDataTexString: 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
+      sourceTexString: iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAEMklEQVR4Ae3BXageBAGA4fc759va3KaTbdJaTj1Rk0aRrp8ZwcjckEzBG1G6aRG1oMACg+jGm7ALKQMlb/q7kAURYdZAxorKcLlWIg0pa1gzqRyJLrfcznYaNAjTnbadtjzne54nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD2DeIlFtfqCetPheu5v9eixOhKz0sp670X17iX1hsV16XgteKZ2Pl73HKjfR4NoWa1bUx+9rG6aX0v7t6k99eVH6lMxK5xXr3tLfWZNfWy8FnQSj9fdO+uTjbhBI2xxXXpt7VhSE03j6drxYF0Tr2obautE3dwpeqy+sLs+2wgbNKIW1PKb6qnxek2n4Gf1kd/WV5veLdXaC2vtJbXi0XpPzNjb6qE/1DPP1p5qT7W1/3Bt7VhZV3ea7qulh+u5RtSgEbWpHlxVmzpFf68nv12X9XJf2VxbegXP1M7v11Vxxj5QD6+o9b2Cr9e91cdX1w3vq/s7Az+tD/2uvtmIGjaCxmreqtrUaVhUl/QvN26oOydqov9iRa2PGVlR6zuJzbWl2tIMXFBrGmHDRtDCem2naVCDzTUVc8oLta8RNtYImqxDnQO76raYkV11W2fRH+v+RtiwOWxdfff5Wv5E/aL6YfVAx71Y+w/X8/Pr/M6SR+rTe+pLMSO/rjun6ug764v9j+2thw/W073c9dXVb6y3n1/7d9eNzVGD5piN9YPX1/ubxmRNDmvYKZqqBk3vQO39ed26rx6Is+biuv5dddeSmuiEqWrQzEzW5LCGTeOp2ra9rmsOGTQHDOu8K+vza+vWzoHJOvTn+tGv6vb9tSv+b5bXO66o21fWNeM1v3NgT931y/rcZB1slhs2B0zW4n11+drO2FQ16LgjdeBPtf03de9f6idH68V41dpfu7bXdR23qFZfVfesqk1jNX+yXniyvvNEfWNeLV5WVy6rK5bWmxfVxeO1oDOwry6frMXVwWa5QXPL+g1130RNdBJH6x9b66IjdaCXGgxqMFXHYtYb1NhUHesUzaslt9Rfx2tBJ7G39v64PljtbI4YNDd9+Oa6e2Et7IRjNfm9WvdsPRacxIX11htq91gNO+FQHfpWfaL6Wswaw+qOjbVtrOYFp2Gs5m2sbdUd1TAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGn9E24Vs7Th49MOAAAAAElFTkSuQmCC
+      scatteringInstanceCount: 114
+      scatteringRadiusMinMaxPercent: !<Vec2> {x: 0.003906, y: 0.007812}
+      scatteringScale: 1.650000
+      gemMeshIdR: 2
       gemMeshIdG: 0
       gemMeshIdB: 0
       customStampTextures: "[]"
@@ -557,7 +553,7 @@
       enableMakeupBlushBool: true
       enableMakeupLipsBool: true
       enableMakeupLipGlossBool: false
-      enableMakeupStickersBool: true
+      enableMakeupStickersBool: false
       makeupEyeshadowColor: !<Vec4> {x: 0.513726, y: 0.788235, z: 1.000000, w: 1.000000}
       makeupEyeshadowOpacity: !<float> 1.000000
       makeupEyelinerColor: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
@@ -629,7 +625,7 @@
       blushIndex: 8
       lipsIndex: 1
       lipGlossIndex: 1
-      makeupStickersSize: 0.200000
+      makeupStickersSize: 0.051000
       makeupStickersRotation: !<float> 0.000000
       makeupCustomTextureArrays: '{"eyeShadow":[],"eyeliner":[],"blush":[],"lips":[],"stickers":[]}'
       enableHairBool: true
@@ -649,8 +645,8 @@
       hairAugmentationScale: !<float> 1.000000
       hairAugmentationColor1: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
       hairAugmentationColor2: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      enableEnvironmentBool: true
-      enableSparklesBool: true
+      enableEnvironmentBool: false
+      enableSparklesBool: false
       sparkleNumArms: 4
       sparkleThickness: 0.090000
       sparkleTaper: 0.120000
@@ -686,7 +682,7 @@
       postEffectZoomAmount: !<float> 0.000000
       postEffectSharpenAmount: !<float> 0.000000
       bloomColor: !<Vec4> {x: 0.898000, y: 0.604000, z: 0.506000, w: 1.000000}
-      bloomBlurSize: 4.140000
+      bloomBlurSize: !<float> 0.000000
       bloomBrightness: 0.440000
       bloomSaturation: 0.900000
       enableCCBool: false
