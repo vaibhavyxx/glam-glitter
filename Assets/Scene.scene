@@ -3,6 +3,7 @@
   objects:
     - !<own> 00000000-0000-0065-0000-000000000064
     - !<own> 0005641c-028d-459a-0000-000000014b4d
+    - !<own> c58506bf-7589-471d-9e80-fd639a0f8a3b
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -23,11 +24,11 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
-    - !<own> b4f60981-cc60-49d7-ac98-8de29af40376
     - !<own> c78ba193-5bf7-4200-b1d9-bdf526f469a0
     - !<own> c871df9b-e951-4c11-9ed9-aaf7f25a8252
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
+    - !<own> 93013348-1ece-4c69-8134-4aa36a440977
 - !<Camera/00000000-0000-0065-0000-000000000065>
   PrefabRemaps:
     []
@@ -246,25 +247,19 @@
     []
   Components:
     - !<own> 6fc6de14-78fe-4531-a01e-0317272d8a9e
-- !<EyeColorVisual/3404faeb-0198-4155-9a76-aed9caa22c8c>
+- !<VFXComponent/3fe43017-2948-4e04-a699-898e2deca4bc>
   PrefabRemaps:
     []
-  Name: Eye Color
+  Name: VFX Component
   Enabled: true
-  RenderOrder: 0
+  RenderOrder: 5
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Materials:
-    - !<reference> e6c2be39-af38-4fcc-8bcc-cba6f82af2f2
-  EyeToRender: Both
-  FaceIndex: 0
-  TrackingScope: !<reference> 78b40d95-464c-43c4-9182-9896f002f5d7
-  Mode: Color
-  RotationEnabled: false
+  VFXAsset: !<reference> 593af536-48ff-4c8d-8445-47d7f33b9fe1
 - !<ScriptComponent/46983306-1f64-47e3-a76d-9da7a7c2c587>
   PrefabRemaps:
     []
@@ -482,6 +477,7 @@
     makeupBlushGlitterNdfParams: true
     makeupBlushGlitterUseNDFMap: true
     makeupBlushGlitterPixelFilterSize: true
+    makeupEyeShadowGlitterEnabled: true
     makeupEyeShadowGlitterNdfParams: true
     makeupEyeShadowGlitterUseNDFMap: true
     makeupLipsGlitterEnabled: true
@@ -497,12 +493,10 @@
     hairAugmentationRotationAngle: true
     hairAugmentationRotationOffset: true
     hairAugmentationDistributionType: true
+    enableEnvironmentBool: true
+    enableSparklesBool: true
     sparkleNumArms: true
-    sparkleTaper: true
-    sparkleSoftness: true
-    sparkleRotation: true
     sparkleRegion: true
-    sparkleSensitivity: true
     sparkleUseCustomTexture: true
     sparkleCustomTextureString: true
     sparkleCustomTextureName: true
@@ -517,7 +511,9 @@
     vfxApplyPostEffects: true
     vfxAddDeviceTracking: true
     enablePostEffectsBool: true
-    postEffectColorMult: true
+    enableCCBool: true
+    enableRetouchBool: true
+    enableBloomBool: true
     printDebug: true
   ScriptTypesDefault:
     {}
@@ -529,13 +525,13 @@
       presetName: Base
       isCustom: true
       enableGemBool: true
-      gemColorR: !<Vec3> {x: 1.000000, y: 0.964706, z: 0.466667}
+      gemColorR: !<Vec3> {x: 0.356863, y: 0.015686, z: 0.023529}
       gemColorG: !<Vec3> {x: 0.500000, y: 0.800000, z: 1.000000}
       gemColorB: !<Vec3> {x: 1.000000, y: 0.700000, z: 0.900000}
-      gemAbsorptionR: 7.050000
+      gemAbsorptionR: 7.100000
       gemAbsorptionG: !<float> 3.000000
       gemAbsorptionB: !<float> 3.000000
-      gemIndexOfRefractionR: 1.690000
+      gemIndexOfRefractionR: 1.570000
       gemIndexOfRefractionG: 2.420000
       gemIndexOfRefractionB: 2.420000
       scatteringDataTexString: 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
@@ -592,8 +588,8 @@
       makeupBlushGlitterUseNDFMap: false
       makeupBlushGlitterPixelFilterSize: 0.270000
       makeupBlushGlitterSurfaceSpecularRoughness: 0.270000
-      makeupEyeShadowGlitterEnabled: true
-      makeupEyeShadowGlitterIntensity: 0.200000
+      makeupEyeShadowGlitterEnabled: false
+      makeupEyeShadowGlitterIntensity: 0.020000
       makeupEyeShadowGlitterRoughness: 0.200000
       makeupEyeShadowGlitterDensity: !<float> 3.000000
       makeupEyeShadowGlitterColor1: !<Vec4> {x: 0.990000, y: 0.960000, z: 0.750000, w: 1.000000}
@@ -638,29 +634,29 @@
       colorSwap: !<float> 0.000000
       hairAugmentationDistribution: 2.500000
       hairAugmentationDistributionOffset: 0
-      hairAugmentationSelectedObject: 0
+      hairAugmentationSelectedObject: 5
       hairAugmentationRotationAngle: !<float> 0.000000
       hairAugmentationRotationOffset: !<float> 0.000000
       hairAugmentationDistributionType: 0
       hairAugmentationScale: !<float> 1.000000
-      hairAugmentationColor1: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
+      hairAugmentationColor1: !<Vec3> {x: 0.552941, y: 0.090196, z: 0.113725}
       hairAugmentationColor2: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      enableEnvironmentBool: false
-      enableSparklesBool: false
+      enableEnvironmentBool: true
+      enableSparklesBool: true
       sparkleNumArms: 4
       sparkleThickness: 0.090000
-      sparkleTaper: 0.120000
-      sparkleSoftness: !<float> 0.000000
-      sparkleHaze: 0.440000
-      sparkleSize: 3.500000
-      sparkleIntensity: 1.070000
-      sparkleRotation: 0.250000
-      sparkleLumaMix: 0.200000
-      sparkleColorMult: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
+      sparkleTaper: 0.150000
+      sparkleSoftness: 0.110000
+      sparkleHaze: 0.780000
+      sparkleSize: 2.960000
+      sparkleIntensity: 0.690000
+      sparkleRotation: !<float> -51.000000
+      sparkleLumaMix: 0.260000
+      sparkleColorMult: !<Vec3> {x: 1.000000, y: 0.584314, z: 0.592157}
       sparkleRegion: 1
-      sparkleSensitivity: 0.950000
-      sparkleHueOffset: 1.250000
-      sparkleHueFrequency: 8.800000
+      sparkleSensitivity: !<float> 1.000000
+      sparkleHueOffset: 1.350000
+      sparkleHueFrequency: 7.340000
       sparkleUseCustomTexture: false
       sparkleCustomTextureString: ""
       sparkleCustomTextureName: ""
@@ -675,21 +671,21 @@
       vfxApplyPostEffects: false
       vfxAddDeviceTracking: false
       enablePostEffectsBool: true
-      postEffectColorMult: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
+      postEffectColorMult: !<Vec3> {x: 1.000000, y: 0.972549, z: 0.984314}
       postEffectStrength: !<float> 0.000000
-      postEffectPop: !<float> 0.000000
-      postEffectRoseCheeks: !<float> 0.000000
+      postEffectPop: 0.030000
+      postEffectRoseCheeks: 0.070000
       postEffectZoomAmount: !<float> 0.000000
       postEffectSharpenAmount: !<float> 0.000000
-      bloomColor: !<Vec4> {x: 0.898000, y: 0.604000, z: 0.506000, w: 1.000000}
-      bloomBlurSize: !<float> 0.000000
-      bloomBrightness: 0.440000
-      bloomSaturation: 0.900000
-      enableCCBool: false
+      bloomColor: !<Vec4> {x: 1.000000, y: 0.921569, z: 0.913725, w: 1.000000}
+      bloomBlurSize: 0.490000
+      bloomBrightness: 0.190000
+      bloomSaturation: 0.590000
+      enableCCBool: true
       enableZoomBool: false
       enableSharpenBool: false
-      enableRetouchBool: false
-      enableBloomBool: false
+      enableRetouchBool: true
+      enableBloomBool: true
       lutTextureString: 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
       lutIndex: 0
       printDebug: false
@@ -711,6 +707,19 @@
     []
   Components:
     - !<own> c2420ee0-6930-45b9-8c54-ff4147446326
+- !<VFXComponent/93013348-1ece-4c69-8134-4aa36a440977>
+  PrefabRemaps:
+    []
+  Name: VFX Component
+  Enabled: false
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> 7109afd8-47a9-4b60-83c9-608979d64383
 - !<RenderMeshVisual/949f2bba-f6ff-47da-88e0-7253a8cc90e1>
   PrefabRemaps:
     []
@@ -783,22 +792,6 @@
       - 0.000000
       - 0.000000
   TrackingScope: !<reference> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/b4f60981-cc60-49d7-ac98-8de29af40376>
-  PrefabRemaps:
-    []
-  Name: Face Retouch
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> e7072aa6-070d-4be7-8a22-be1319e09324
-    - !<own> 3404faeb-0198-4155-9a76-aed9caa22c8c
 - !<SceneObject/b617b086-39e1-445f-a123-111ed33cd000>
   PrefabRemaps:
     []
@@ -872,6 +865,21 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<SceneObject/c58506bf-7589-471d-9e80-fd639a0f8a3b>
+  PrefabRemaps:
+    []
+  Name: vfx
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3fe43017-2948-4e04-a699-898e2deca4bc
 - !<SceneObject/c78ba193-5bf7-4200-b1d9-bdf526f469a0>
   PrefabRemaps:
     []
@@ -995,108 +1003,6 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<RetouchVisual/e7072aa6-070d-4be7-8a22-be1319e09324>
-  PrefabRemaps:
-    []
-  Name: Face Retouch
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    []
-  FaceIndex: 0
-  TrackingScope: !<reference> 78b40d95-464c-43c4-9182-9896f002f5d7
-  AutoMode: false
-  AutoType: MlRetouch
-  SoftSkinEnabled: true
-  SoftSkinIntensity: 1.000000
-  TeethWhiteningEnabled: true
-  TeethWhiteningIntensity: 0.930000
-  EyeSharpeningEnabled: true
-  EyeSharpeningIntensity: 1.120000
-  EyeWhiteningEnabled: true
-  EyeWhiteningIntensity: 0.590000
-  TextureCoordinates:
-    - {x: 0.042176, y: 0.487153}
-    - {x: 0.050034, y: 0.560045}
-    - {x: 0.068312, y: 0.620651}
-    - {x: 0.094898, y: 0.698092}
-    - {x: 0.137781, y: 0.771647}
-    - {x: 0.196259, y: 0.823793}
-    - {x: 0.272374, y: 0.864801}
-    - {x: 0.360761, y: 0.906846}
-    - {x: 0.505500, y: 0.936027}
-    - {x: 0.651094, y: 0.906202}
-    - {x: 0.740179, y: 0.863246}
-    - {x: 0.815244, y: 0.821252}
-    - {x: 0.871161, y: 0.768013}
-    - {x: 0.911349, y: 0.693912}
-    - {x: 0.935981, y: 0.617186}
-    - {x: 0.953375, y: 0.557976}
-    - {x: 0.961071, y: 0.486209}
-    - {x: 0.141550, y: 0.425154}
-    - {x: 0.190398, y: 0.388542}
-    - {x: 0.261150, y: 0.378964}
-    - {x: 0.332630, y: 0.388794}
-    - {x: 0.398767, y: 0.412476}
-    - {x: 0.600716, y: 0.412226}
-    - {x: 0.668048, y: 0.388749}
-    - {x: 0.740687, y: 0.379184}
-    - {x: 0.812402, y: 0.389274}
-    - {x: 0.861802, y: 0.426481}
-    - {x: 0.500528, y: 0.449956}
-    - {x: 0.500177, y: 0.495004}
-    - {x: 0.499794, y: 0.522222}
-    - {x: 0.499353, y: 0.558485}
-    - {x: 0.444626, y: 0.599369}
-    - {x: 0.471634, y: 0.604367}
-    - {x: 0.499352, y: 0.609457}
-    - {x: 0.527251, y: 0.604827}
-    - {x: 0.554210, y: 0.600117}
-    - {x: 0.157412, y: 0.477612}
-    - {x: 0.217647, y: 0.434494}
-    - {x: 0.324231, y: 0.435234}
-    - {x: 0.403611, y: 0.471437}
-    - {x: 0.328043, y: 0.500339}
-    - {x: 0.220157, y: 0.500829}
-    - {x: 0.594118, y: 0.470978}
-    - {x: 0.674431, y: 0.434494}
-    - {x: 0.780835, y: 0.434367}
-    - {x: 0.840301, y: 0.477583}
-    - {x: 0.777087, y: 0.500280}
-    - {x: 0.669412, y: 0.499171}
-    - {x: 0.328079, y: 0.771144}
-    - {x: 0.415048, y: 0.742348}
-    - {x: 0.457629, y: 0.737240}
-    - {x: 0.497949, y: 0.748319}
-    - {x: 0.538753, y: 0.737499}
-    - {x: 0.581569, y: 0.742952}
-    - {x: 0.668832, y: 0.771672}
-    - {x: 0.597583, y: 0.795555}
-    - {x: 0.559266, y: 0.803216}
-    - {x: 0.497426, y: 0.810945}
-    - {x: 0.436000, y: 0.802653}
-    - {x: 0.398353, y: 0.794362}
-    - {x: 0.353177, y: 0.771144}
-    - {x: 0.463608, y: 0.754561}
-    - {x: 0.498001, y: 0.759536}
-    - {x: 0.532835, y: 0.754821}
-    - {x: 0.642564, y: 0.771706}
-    - {x: 0.533882, y: 0.791045}
-    - {x: 0.497687, y: 0.791045}
-    - {x: 0.461907, y: 0.790932}
-    - {x: 0.050865, y: 0.172151}
-    - {x: 0.205652, y: 0.073161}
-    - {x: 0.339052, y: 0.029951}
-    - {x: 0.500065, y: 0.021309}
-    - {x: 0.662180, y: 0.029672}
-    - {x: 0.797056, y: 0.072717}
-    - {x: 0.951792, y: 0.171655}
 - !<RenderMeshVisual/fb0bd580-1163-47fa-b45d-9e32cf080c97>
   PrefabRemaps:
     []
