@@ -1,0 +1,56 @@
+- !<Material/ad2b75ef-afe8-48f5-85b3-aa80995d8a93>
+  PackagePath: ""
+  PassesInfo:
+    - !<own> b1e2acf7-1829-4bbf-b50c-2d0f40fb72df
+- !<PassInfo/b1e2acf7-1829-4bbf-b50c-2d0f40fb72df>
+  CachedProperties:
+    - correctedIntensity:
+        typeIdx: 1
+        value: 0.000000
+    - intensityTexture:
+        typeIdx: 9
+        value:
+          id: 00000000-0000-0000-0000-000000000000
+          sampler:
+            filteringMode: Trilinear
+            wrapModeU: Repeat
+            wrapModeV: Repeat
+            wrapModeW: Repeat
+            borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+            mipmaps: false
+          type: Texture2D
+  DepthWrite: false
+  DepthTest: false
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    - BLEND_MODE_HARD_LIGHT
+    - ENABLE_CUSTOM_BLEND
+    - NODE_13_DROPLIST_ITEM 0
+    - NODE_27_DROPLIST_ITEM 0
+    - NODE_49_DROPLIST_ITEM 0
+    - NODE_69_DROPLIST_ITEM 0
+    - NOMASK
+    - NOTEXTURE
+    - sc_BlendMode_Custom
+  BlendMode: HardLight
+  Properties:
+    Port_Default_N204:
+      typeIdx: 1
+      value: 0.000000
+    Port_Default_N369:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 0.435294, y: 0.039216, z: 0.066667, w: 0.540000}
+  Pass: !<reference> 35bd7693-ddf5-43b1-95dd-90de60aeacb5
