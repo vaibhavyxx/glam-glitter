@@ -1,0 +1,127 @@
+- !<AssetImportMetadata/dd6931a7-3342-42d5-afeb-1114d374baad>
+  ImportedAssetIds:
+    .hidden/GraphWarp: !<reference> 8e6bf837-26a4-4fac-93c4-8ef00105ee04
+    .hidden/facepartsmask: !<reference> f802fa08-96dd-4496-9f92-88fd7c9e5ab3
+    38f8f47f172fd4d5: !<reference> bfe140dc-08d1-497d-a608-e8b7e5f17a16
+    517c539e91326c88: !<reference> 99fab705-5c8b-41f0-a1c6-b62f1119970e
+    5668bb32d5e3315b: !<reference> c6a30539-4cfc-422c-93d4-b54f7e6fc143
+    60df217f544e4d6e: !<reference> f19bf9ed-fadc-4548-95a2-fec2ddd77f2d
+    72285517ff7258d2: !<reference> 48da9418-0538-442e-a23d-efdb4800a726
+    Resources/Materials/GraphWarp: !<reference> 856730f4-c3c2-44df-818a-ebd0cd51d5bd
+    Resources/Materials/GraphWarp|GraphWarp|GraphPassInfo: !<reference> e1340e81-9468-4e2a-a67a-e1bbd713147a
+    Resources/Materials/facepartsmask: !<reference> 86eae44a-393f-4e5f-88f0-2d1d4c9530f6
+    Resources/Materials/facepartsmask|facepartsmask|GraphPassInfo: !<reference> ff3199d9-ba5c-4b39-9f60-de0dfabf302b
+    Resources/Meshes/Face Mesh 0: !<reference> 5a4de9a0-78f6-4e4a-898b-57d41134b6fc
+    Resources/Meshes/Face Mesh 1: !<reference> 9d6ad223-bbdc-4dc9-8d68-2321e08387dd
+    Resources/Textures/FaceMask: !<reference> 885821f0-d3db-494b-9dbf-00f8841c5f35
+    Resources/Textures/Screen Crop Texture 0: !<reference> ecf8ff25-cf42-40cb-a6af-15c8d7df617b
+    Resources/Textures/Screen Crop Texture 1: !<reference> 6f04ee83-c78c-4e23-be1a-36a7a3503183
+    Resources/Textures/Screen Texture: !<reference> 10c6bcb9-4078-4bd8-810f-4ef9a0a80ca1
+    Resources/Textures/black_pixel: !<reference> 633390ae-4243-4003-a0fb-a73a3e442f46
+    Resources/Textures/low: !<reference> 3c3e3ff5-e120-4389-b172-5f591f50bd97
+    Resources/Textures/mask: !<reference> 53bcb813-a23a-475d-9b0a-583b9808a4bd
+    Resources/Textures/mask_brows_crop: !<reference> ee9dadb6-77cd-43d5-9947-e9d6f905de5a
+    Resources/Textures/mask_eyes: !<reference> 4cd9bfb9-5419-4a7e-a836-34f4cd1cc4d5
+    Resources/Textures/mask_eyes_area_crop: !<reference> a03f3182-a235-4349-8114-28074d72830f
+    Resources/Textures/mask_lips_crop: !<reference> 8e057d3f-e0f4-4b88-80c3-dd9ade32daa7
+    Scripts/Basic Beauty ML/Basic Beauty ML: !<reference> a8f5edec-ea6a-4fc0-9f53-d53e94f12a68
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> a8f5edec-ea6a-4fc0-9f53-d53e94f12a68
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    Resources/Textures/FaceMask: !<own> bd774ae8-6703-41ca-b9b8-88a577f66788
+  DependentFiles:
+    []
+  ImporterSettings: !<LensCoreImporterSettings>
+    PersistentIdGenerationAlgorithm: DescriptorBased
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/48da9418-0538-442e-5dc2-1024b7ff58d9>
+  PrefabRemaps:
+    []
+  Name: FaceMask
+  Enabled: false
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> bfe140dc-08d1-497d-59f7-17481a0e85e9
+  Components:
+    []
+- !<Head/99fab705-5c8b-41f0-5e39-49d0eee668f1>
+  PrefabRemaps:
+    []
+  Name: Head Binding
+  Enabled: true
+  AttachmentPointType: HeadCenter
+  FaceIndex: 0
+  AttachedBarycentricVertex:
+    indices:
+      - 0
+      - 0
+      - 0
+    weights:
+      - 0.000000
+      - 0.000000
+      - 0.000000
+  TrackingScope: !<reference> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/bd774ae8-6703-41ca-b9b8-88a577f66788>
+  Prototype: !<ObjectOwner/230350e5-8787-4dba-adb1-7db52ca03d38>
+    PackagePath: ""
+    objects:
+      - !<own> 48da9418-0538-442e-5dc2-1024b7ff58d9
+- !<SceneObject/bfe140dc-08d1-497d-59f7-17481a0e85e9>
+  PrefabRemaps:
+    []
+  Name: Head Binding 0
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> f19bf9ed-fadc-4548-6a5d-013d222880d2
+  Components:
+    - !<own> 99fab705-5c8b-41f0-5e39-49d0eee668f1
+- !<RenderMeshVisual/c6a30539-4cfc-422c-6c2b-4ab081903ebc>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 2
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 86eae44a-393f-4e5f-88f0-2d1d4c9530f6
+  Mesh: !<reference> 5a4de9a0-78f6-4e4a-898b-57d41134b6fc
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/f19bf9ed-fadc-4548-6a5d-013d222880d2>
+  PrefabRemaps:
+    []
+  Name: Face Mesh
+  Enabled: true
+  Layers: 16
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c6a30539-4cfc-422c-6c2b-4ab081903ebc

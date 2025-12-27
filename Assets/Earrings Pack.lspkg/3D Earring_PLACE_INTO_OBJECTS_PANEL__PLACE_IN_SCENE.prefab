@@ -1,0 +1,223 @@
+- !<ObjectPrefab/0eada76f-79e7-4ded-a3ba-424ce8b156de>
+  PackagePath: ""
+  objects:
+    - !<own> 36987502-3d23-4d3c-b7a1-3b4c1ee63a06
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/0f45f6eb-e40e-4acb-a858-7b3c20a15cc3>
+  PrefabRemaps:
+    []
+  Name: Bow
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 6.381674, y: -8.014614, z: 31.838306}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 95a6bac3-ed32-4c98-98ca-2b1b12763211
+  Components:
+    []
+- !<SceneObject/36987502-3d23-4d3c-b7a1-3b4c1ee63a06>
+  PrefabRemaps:
+    - 0f45f6eb-e40e-4acb-a858-7b3c20a15cc3: 0f45f6eb-e40e-4acb-57a7-84c3df5ea33c
+    - 36987502-3d23-4d3c-b7a1-3b4c1ee63a06: 36987502-3d23-4d3c-485e-c4b3e119c5f9
+    - 626155e5-3924-41ca-84e1-af0c255466b4: 626155e5-3924-41ca-7b1e-50f3daab994b
+    - 7bc28ba5-18cc-4031-ab2a-9955c3330ab5: 7bc28ba5-18cc-4031-54d5-66aa3cccf54a
+    - 93c8b296-5e82-4575-8553-568b5926e673: 93c8b296-5e82-4575-7aac-a974a6d9198c
+    - 95a6bac3-ed32-4c98-98ca-2b1b12763211: 95a6bac3-ed32-4c98-6735-d4e4ed89cdee
+    - 9f364a82-8e39-4aaf-91db-37d04c36d69a: 9f364a82-8e39-4aaf-6e24-c82fb3c92965
+    - bb1583a7-1092-414a-b316-aa42d4705d2c: bb1583a7-1092-414a-4ce9-55bd2b8fa2d3
+    - db056e55-6aca-4c02-b75f-1cfe1b6f7f65: db056e55-6aca-4c02-48a0-e301e490809a
+  Name: 3D Earring_PLACE_INTO_OBJECTS_PANEL__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> db056e55-6aca-4c02-b75f-1cfe1b6f7f65
+    - !<own> 0f45f6eb-e40e-4acb-a858-7b3c20a15cc3
+  Components:
+    []
+- !<SceneObject/626155e5-3924-41ca-84e1-af0c255466b4>
+  PrefabRemaps:
+    []
+  Name: Stud Earring Mesh
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9f364a82-8e39-4aaf-91db-37d04c36d69a
+- !<SceneObject/7bc28ba5-18cc-4031-ab2a-9955c3330ab5>
+  PrefabRemaps:
+    []
+  Name: Stud gem Earring mesh
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> bb1583a7-1092-414a-b316-aa42d4705d2c
+- !<RenderMeshVisual/93c8b296-5e82-4575-8553-568b5926e673>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 56ff1a59-f35f-4fbd-975b-dedfbed2094f
+  Mesh: !<reference> d95e18b7-cb96-473d-b08c-45ac9c75ef5a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: true
+        roughHarden: 0.500000
+        roughCurve: 2.000000
+    GlobalIllumination:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/95a6bac3-ed32-4c98-98ca-2b1b12763211>
+  PrefabRemaps:
+    []
+  Name: golden earring
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -6.203096, y: 11.058746, z: -33.476498}
+    Rotation: {x: -180.000000, y: -89.980217, z: 180.000000}
+    Scale: {x: 0.673910, y: 0.673910, z: 0.673910}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 93c8b296-5e82-4575-8553-568b5926e673
+- !<RenderMeshVisual/9f364a82-8e39-4aaf-91db-37d04c36d69a>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 6adcaa70-42f4-4fb9-9407-dae394540279
+  Mesh: !<reference> 5b9d83a8-6911-4310-812d-e4b33d85c876
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: true
+        roughHarden: 0.500000
+        roughCurve: 2.000000
+    GlobalIllumination:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<RenderMeshVisual/bb1583a7-1092-414a-b316-aa42d4705d2c>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 51b4918c-7ac1-4671-992a-39518951db9d
+  Mesh: !<reference> 7504f1e9-2fdf-44dc-833f-4094e2549267
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: true
+        roughHarden: 0.500000
+        roughCurve: 2.000000
+    GlobalIllumination:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/db056e55-6aca-4c02-b75f-1cfe1b6f7f65>
+  PrefabRemaps:
+    []
+  Name: Stud
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 18.611160, y: 8.370300, z: -1.053345}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 626155e5-3924-41ca-84e1-af0c255466b4
+    - !<own> 7bc28ba5-18cc-4031-ab2a-9955c3330ab5
+  Components:
+    []

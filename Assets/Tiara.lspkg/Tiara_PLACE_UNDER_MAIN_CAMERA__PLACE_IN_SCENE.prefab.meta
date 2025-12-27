@@ -1,0 +1,247 @@
+- !<AssetImportMetadata/b913abeb-8925-4790-9b94-fdb8cd7bbb5f>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 7476ef3b-8cce-4bb0-a43a-92cde1eabad9
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 7476ef3b-8cce-4bb0-a43a-92cde1eabad9
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: 3EOewIExSxjho5norSDtJI
+  AssetDataMap:
+    ObjectPrefab: !<own> eb1d52f6-a7a8-435d-b533-ede779794874
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/0f5171e6-79a1-40f6-4d55-b31a25868a8d>
+  PrefabRemaps:
+    []
+  Name: Face Mesh
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 374618f0-62fc-46bf-527f-8942cc3d7ac1
+- !<RenderMeshVisual/374618f0-62fc-46bf-527f-8942cc3d7ac1>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8b39c993-80a3-437e-aa62-0cf629a12081
+  Mesh: !<reference> 26a64058-154b-448c-99ac-7bced8d78685
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: true
+        roughHarden: 0.500000
+        roughCurve: 2.000000
+    GlobalIllumination:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<RenderMeshVisual/6236cf84-a951-459a-75c5-a3911f8a6e73>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8cd34ac3-78b3-4acb-bd74-78ddbd16dd48
+  Mesh: !<reference> 380068ae-e702-4a73-b54f-ec91ac819427
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: true
+        roughHarden: 0.500000
+        roughCurve: 2.000000
+    GlobalIllumination:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/6f3b7cb1-efe9-40ac-4694-a516e2bae544>
+  PrefabRemaps:
+    []
+  Name: Head Binding 0
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0f5171e6-79a1-40f6-4d55-b31a25868a8d
+    - !<own> 982ccf46-85a2-4b07-4bc5-9fd54cfd741d
+  Components:
+    - !<own> 7d4b0791-8a80-4c93-442f-833336c18958
+- !<Head/7d4b0791-8a80-4c93-442f-833336c18958>
+  PrefabRemaps:
+    []
+  Name: Head Binding
+  Enabled: true
+  AttachmentPointType: HeadCenter
+  FaceIndex: 0
+  AttachedBarycentricVertex:
+    indices:
+      - 0
+      - 0
+      - 0
+    weights:
+      - 0.000000
+      - 0.000000
+      - 0.000000
+  TrackingScope: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/982ccf46-85a2-4b07-4bc5-9fd54cfd741d>
+  PrefabRemaps:
+    []
+  Name: Tiara
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 14.119122, z: 9.392929}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 0.633986, y: 0.633986, z: 0.633986}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> ce87b5d1-2b4c-4c5e-78f0-dc19df7d43a3
+    - !<own> fced70fb-585d-4cb3-7dcd-fc18260e634a
+  Components:
+    []
+- !<SceneObject/ce87b5d1-2b4c-4c5e-78f0-dc19df7d43a3>
+  PrefabRemaps:
+    []
+  Name: Tiara Base
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 42.344784, y: 42.344776, z: 42.344776}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6236cf84-a951-459a-75c5-a3911f8a6e73
+- !<RenderMeshVisual/df2ed470-cf5a-480c-71d7-540daeb69d8a>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 73c250e7-768a-4016-b7ab-78fe3ca808b1
+  Mesh: !<reference> d3196dbe-d1b0-40b9-8a48-13e59a2a56e4
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: true
+        roughHarden: 0.500000
+        roughCurve: 2.000000
+    GlobalIllumination:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<ObjectPrefabAssetData/eb1d52f6-a7a8-435d-b533-ede779794874>
+  Prototype: !<ObjectOwner/c222d099-17cd-4dfe-8954-a94d1c4382b3>
+    PackagePath: ""
+    objects:
+      - !<own> f49c39a2-e205-4261-6f95-29d73027d517
+- !<SceneObject/f49c39a2-e205-4261-6f95-29d73027d517>
+  PrefabRemaps:
+    []
+  Name: Tiara_PLACE_UNDER_MAIN_CAMERA__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6f3b7cb1-efe9-40ac-4694-a516e2bae544
+  Components:
+    []
+- !<SceneObject/fced70fb-585d-4cb3-7dcd-fc18260e634a>
+  PrefabRemaps:
+    []
+  Name: Tiara - Gems
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 42.344784, y: 42.344776, z: 42.344776}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> df2ed470-cf5a-480c-71d7-540daeb69d8a

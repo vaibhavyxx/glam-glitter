@@ -1,0 +1,37 @@
+- !<NativePackageDescriptor/7accaeb0-2672-40ba-95bd-34ef4cba35a0>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 17
+    patch: 1
+    build: 25121920
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: "Garnet Crown A 3D model of a medieval crown, embellished with hundreds of gems."
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 83
+  ExportUid: c6da6800-b08e-4544-84be-4d4e7b134b73
+  ComponentUid: bb00908f-0f7b-4c7b-a250-f801e030a101
+  PackagePolicy: CanBeUnpackedTransparent
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0

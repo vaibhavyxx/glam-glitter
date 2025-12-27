@@ -1,0 +1,37 @@
+- !<NativePackageDescriptor/37280dff-23b1-4fd4-8dde-f97abc29a626>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 17
+    patch: 1
+    build: 25121920
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: Bokeh Particle This package contains the high quality Bokeh VFX asset. You can customize this particle system using VFX Editor. Click here to learn more about VFX Editor
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 83
+  ExportUid: c25f2c53-4fa7-44e5-b573-5f2f257db109
+  ComponentUid: 13a8caf8-aa60-48bc-bf82-a0aa88983ad6
+  PackagePolicy: CanBeUnpackedTransparent
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0

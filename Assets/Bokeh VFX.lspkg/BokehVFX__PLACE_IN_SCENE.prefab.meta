@@ -1,0 +1,49 @@
+- !<AssetImportMetadata/fcd91116-d951-2dab-4857-a588e7d6de92>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> c06cf45b-e6aa-42ea-a3fa-74bda51284e3
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> c06cf45b-e6aa-42ea-a3fa-74bda51284e3
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: 4QFryABBuGBqB6LNsMXfcU
+  AssetDataMap:
+    ObjectPrefab: !<own> f99ed84a-14c9-444b-a0e5-23707d65a6e1
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/5ddf35b7-c851-4f3b-710a-07ff2327a44a>
+  PrefabRemaps:
+    []
+  Name: BokehVFX__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: -40.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a1f06e85-3f7e-4df8-733e-a3544db940a9
+- !<VFXComponent/a1f06e85-3f7e-4df8-733e-a3544db940a9>
+  PrefabRemaps:
+    []
+  Name: VFX Component
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> 593af536-48ff-4c8d-8445-47d7f33b9fe1
+- !<ObjectPrefabAssetData/f99ed84a-14c9-444b-a0e5-23707d65a6e1>
+  Prototype: !<ObjectOwner/4cd2bbea-00b7-43c5-81f4-fc50d4b93671>
+    PackagePath: ""
+    objects:
+      - !<own> 5ddf35b7-c851-4f3b-710a-07ff2327a44a

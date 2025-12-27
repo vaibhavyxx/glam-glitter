@@ -1,0 +1,37 @@
+- !<NativePackageDescriptor/63046f65-4999-405f-87a6-9c0b7b2b74ad>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 17
+    patch: 1
+    build: 25121920
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: This 3D tiara asset features intricate details and elegant curves fit for royalty. Perfect for adding a touch of glamour to your virtual fashion or jewelry designs.
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 83
+  ExportUid: e15425eb-88f3-4acb-b00d-000cdab1f9b2
+  ComponentUid: 0db56601-cf14-44b8-ac5e-98381562326c
+  PackagePolicy: CanBeUnpackedTransparent
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0
