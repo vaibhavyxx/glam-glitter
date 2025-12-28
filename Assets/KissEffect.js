@@ -26,13 +26,11 @@ function animateKiss(){
         time += getDeltaTime();
         alphaRatio();
 
-        if(time > script.threshold){
-            time -= getDeltaTime();
-            alphaRatio();
-
-            if(time <= 0) time = 0;
-            kissTriggered = false;
+        if(time > script.threshold) kissTriggered = false;
         }
+    else{
+        time -= getDeltaTime();
+        alphaRatio();
     }
 }
 

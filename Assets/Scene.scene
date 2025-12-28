@@ -748,7 +748,7 @@
     []
   Name: Screen Region
   Enabled: true
-  ScreenRegionType: RoundButton
+  ScreenRegionType: Preview
   ResizeWithKeyboard: false
 - !<ScriptComponent/87ea1bc0-501e-4373-a5f8-bdf21643eb84>
   PrefabRemaps:
@@ -757,13 +757,13 @@
   Enabled: true
   ScriptAsset: !<reference> 2547a636-551b-4c93-a291-3c8f0786f9af
   ScriptInputsDefault:
-    threshold: true
+    {}
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       kissObject: !<reference.SceneObject> acfa63a7-fcf4-4927-aebb-54b7ac68e41c
-      threshold: !<float> 5.000000
+      threshold: !<float> 2.000000
   ScriptTypes:
     "":
       {}
@@ -1215,9 +1215,9 @@
   ForceBasic: true
   Anchor:
     left: -1.000000
-    bottom: -1.000000
+    bottom: -0.570000
     right: 1.000000
-    top: 1.000000
+    top: 0.850000
   Offset:
     left: 0.000000
     bottom: 0.000000
