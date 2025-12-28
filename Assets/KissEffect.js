@@ -1,10 +1,40 @@
+
 //@input SceneObject kissObject
-//@input let duration = 5.0f;
+//@input float threshold = 5.0f;
 let kissTriggered = false;
 
 let event = script.createEvent("KissStartedEvent");
+let time = 0;
+
 event.faceIndex = 0;
 event.bind(function(eventData){
-    //script.kissObject.enabled = true;
+    //print("kiss me");
+    script.kissObject.enabled = true;
     kissTriggered = true;
 });
+
+function alphaRatio(){
+    let fadeRatio = (time / script.threshold);
+    let image = script.kissObject.getComponent("Component.Image");
+    let color = image.mainPass.baseColor;
+    color.a = fadeRatio;
+    image.mainPass.baseColor = color;
+}
+
+function animateKiss(){
+    if(kissTriggered){
+        time += getDeltaTime();
+        alphaRatio();
+
+        if(time > script.threshold){
+            time -= getDeltaTime();
+            alphaRatio();
+
+            if(time <= 0) time = 0;
+            kissTriggered = false;
+        }
+    }
+}
+
+var updateEvent = script.createEvent('UpdateEvent');
+updateEvent.bind(animateKiss);

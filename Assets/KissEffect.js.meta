@@ -26,8 +26,8 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    duration: false
     kissObject: false
+    threshold: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -38,7 +38,7 @@
     []
   DefaultScriptInputs:
     - kissObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      duration: !<RequiredType.let> 00000000-0000-0000-0000-000000000000
+      threshold: !<float> 5.000000
   ScriptTypes:
     -
       {}

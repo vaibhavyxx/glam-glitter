@@ -757,12 +757,13 @@
   Enabled: true
   ScriptAsset: !<reference> 2547a636-551b-4c93-a291-3c8f0786f9af
   ScriptInputsDefault:
-    {}
+    threshold: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       kissObject: !<reference.SceneObject> acfa63a7-fcf4-4927-aebb-54b7ac68e41c
+      threshold: !<float> 5.000000
   ScriptTypes:
     "":
       {}
