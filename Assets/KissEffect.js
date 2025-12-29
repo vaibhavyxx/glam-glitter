@@ -8,7 +8,7 @@ let time = 0;
 
 event.faceIndex = 0;
 event.bind(function(eventData){
-    //print("kiss me");
+    print("kiss me");
     script.kissObject.enabled = true;
     kissTriggered = true;
 });
