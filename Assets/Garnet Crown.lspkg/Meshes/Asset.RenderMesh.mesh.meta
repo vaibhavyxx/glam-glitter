@@ -19,5 +19,11 @@
       tangent: Float
       texture0: Float
   CompressionSettings: !<SingleCompressionSettings>
-    CompressorName: None
-    CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+    CompressorName: Draco
+    CompressionSettings: !<MeshCompressionSettings>
+      EnableDracoCompression: true
+      CompressionLevel: 10
+      PositionBits: 8
+      TexcoordBits: 8
+      NormalBits: 4
+      ColorBits: 4

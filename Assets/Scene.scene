@@ -30,7 +30,6 @@
     - !<own> 822dfd1b-e115-4263-b37c-2eb60d4701d8
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
-    - !<own> 93013348-1ece-4c69-8134-4aa36a440977
 - !<Camera/00000000-0000-0065-0000-000000000065>
   PrefabRemaps:
     []
@@ -100,7 +99,7 @@
   Enabled: true
   renderLayer: 1835007
   LightType: Directional
-  Intensity: 1.000000
+  Intensity: 7.580000
   CastShadows: false
   ShadowDensity: 0.440000
   ShadowBlurRadius: 4.000000
@@ -241,7 +240,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.009621, y: 15.892270, z: 0.053978}
+    Position: {x: 0.009621, y: 15.892271, z: -0.289062}
     Rotation: {x: -90.000000, y: -11.238467, z: 0.000000}
     Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
     HasSegmentScaleCompensation: false
@@ -297,7 +296,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.009613, y: 17.461182, z: 0.053929}
+    Position: {x: 0.009613, y: 17.461180, z: -0.289111}
     Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 100.000000, y: 99.999985, z: 99.999985}
     HasSegmentScaleCompensation: false
@@ -318,13 +317,13 @@
     pinToBottom: false
     fixedWidth: false
     fixedHeight: false
-    deactivatedFixedSprite: false
+    deactivatedFixedSprite: true
     deactivatedFixedPivot: false
-  Pivot: {x: 0.000000, y: 0.000000}
+  Pivot: {x: 1.151757, y: 0.786622}
   Transform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 0.500000, y: 0.500000, z: 0.500000}
+    scale: {x: 1.500000, y: 1.500000, z: 1.500000}
     hasSegmentScaleCompensation: false
   RawMode: true
   ForceBasic: false
@@ -334,10 +333,10 @@
     right: 1.000000
     top: 1.000000
   Offset:
-    left: 0.000000
-    bottom: 0.000000
-    right: 0.000000
-    top: 0.000000
+    left: 243.078766
+    bottom: 98.150597
+    right: -216.681244
+    top: -733.750427
 - !<RenderMeshVisual/4d7838fb-1f45-4f60-acd3-335ba011c304>
   PrefabRemaps:
     []
@@ -365,7 +364,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.009518, y: 16.742460, z: 0.053402}
+    Position: {x: 0.009518, y: 16.742460, z: -0.289637}
     Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 100.000000, y: 99.999985, z: 99.999985}
     HasSegmentScaleCompensation: false
@@ -530,8 +529,6 @@
     makeupBlushGlitterPixelFilterSize: true
     makeupEyeShadowGlitterNdfParams: true
     makeupEyeShadowGlitterUseNDFMap: true
-    makeupLipsGlitterEnabled: true
-    makeupLipsGlitterIntensity: true
     makeupLipsGlitterNdfParams: true
     makeupLipsGlitterUseNDFMap: true
     eyeShadowIndex: true
@@ -613,7 +610,7 @@
       makeupLipsColor: !<Vec4> {x: 0.549020, y: 0.137255, z: 0.149020, w: 1.000000}
       makeupLipsOpacity: !<float> 1.000000
       makeupLipGlossColor: !<Vec4> {x: 0.549020, y: 0.137255, z: 0.149020, w: 1.000000}
-      makeupLipGlossOpacity: 0.380000
+      makeupLipGlossOpacity: 0.030000
       makeupEyeShadowGlitterPresetId: Gold Shimmer
       makeupEyelinerGlitterPresetId: Custom
       makeupBlushGlitterPresetId: Gold Shimmer
@@ -630,7 +627,7 @@
       makeupEyelinerGlitterPixelFilterSize: 0.270000
       makeupEyelinerGlitterSurfaceSpecularRoughness: 0.270000
       makeupBlushGlitterEnabled: true
-      makeupBlushGlitterIntensity: 0.740000
+      makeupBlushGlitterIntensity: 0.450000
       makeupBlushGlitterRoughness: 0.200000
       makeupBlushGlitterDensity: !<float> 3.000000
       makeupBlushGlitterColor1: !<Vec4> {x: 0.990000, y: 0.960000, z: 0.750000, w: 1.000000}
@@ -641,7 +638,7 @@
       makeupBlushGlitterPixelFilterSize: 0.270000
       makeupBlushGlitterSurfaceSpecularRoughness: 0.270000
       makeupEyeShadowGlitterEnabled: true
-      makeupEyeShadowGlitterIntensity: 0.340000
+      makeupEyeShadowGlitterIntensity: 0.210000
       makeupEyeShadowGlitterRoughness: 0.200000
       makeupEyeShadowGlitterDensity: !<float> 3.000000
       makeupEyeShadowGlitterColor1: !<Vec4> {x: 0.990000, y: 0.960000, z: 0.750000, w: 1.000000}
@@ -651,8 +648,8 @@
       makeupEyeShadowGlitterUseNDFMap: false
       makeupEyeShadowGlitterPixelFilterSize: 0.270000
       makeupEyeShadowGlitterSurfaceSpecularRoughness: 0.270000
-      makeupLipsGlitterEnabled: false
-      makeupLipsGlitterIntensity: 0.500000
+      makeupLipsGlitterEnabled: true
+      makeupLipsGlitterIntensity: 0.140000
       makeupLipsGlitterRoughness: 0.200000
       makeupLipsGlitterDensity: !<float> 3.000000
       makeupLipsGlitterColor1: !<Vec4> {x: 0.990000, y: 0.960000, z: 0.750000, w: 1.000000}
@@ -774,13 +771,14 @@
   Enabled: true
   ScriptAsset: !<reference> 2547a636-551b-4c93-a291-3c8f0786f9af
   ScriptInputsDefault:
-    {}
+    wait: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       kissObject: !<reference.SceneObject> acfa63a7-fcf4-4927-aebb-54b7ac68e41c
       threshold: 1.500000
+      wait: !<float> 5.000000
   ScriptTypes:
     "":
       {}
@@ -791,7 +789,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: -0.000000, y: 14.356038, z: 0.000000}
+    Position: {x: 0.000000, y: 14.356037, z: -0.343039}
     Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 100.000000, y: 99.999985, z: 1.860278}
     HasSegmentScaleCompensation: false
@@ -799,19 +797,6 @@
     []
   Components:
     - !<own> c2420ee0-6930-45b9-8c54-ff4147446326
-- !<VFXComponent/93013348-1ece-4c69-8134-4aa36a440977>
-  PrefabRemaps:
-    []
-  Name: VFX Component
-  Enabled: false
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  VFXAsset: !<reference> 7109afd8-47a9-4b60-83c9-608979d64383
 - !<RenderMeshVisual/949f2bba-f6ff-47da-88e0-7253a8cc90e1>
   PrefabRemaps:
     []
@@ -873,7 +858,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: -0.000359, y: 15.375058, z: -0.001736}
+    Position: {x: -0.000359, y: 15.375057, z: -0.344775}
     Rotation: {x: 90.000000, y: -6.771882, z: 180.000000}
     Scale: {x: 99.999969, y: 100.000000, z: 100.000000}
     HasSegmentScaleCompensation: false
@@ -981,7 +966,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 0.500000, y: 0.500000, z: 0.500000}
+    Scale: {x: 1.500000, y: 1.500000, z: 1.500000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -995,7 +980,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.009819, y: 17.379322, z: 0.055089}
+    Position: {x: 0.009819, y: 17.379322, z: -0.287951}
     Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 100.000000, y: 99.999985, z: 99.999985}
     HasSegmentScaleCompensation: false
@@ -1010,7 +995,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.009639, y: 15.977563, z: 0.054237}
+    Position: {x: 0.009639, y: 15.977562, z: -0.288803}
     Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 100.000000, y: 99.999985, z: 99.999985}
     HasSegmentScaleCompensation: false
@@ -1104,12 +1089,11 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> c21b4b3e-bd72-43d3-91b3-3e8d28123f43
-    - !<own> 19367f52-d3f0-4ff7-9960-7d53de1d0425
     - !<own> 0f4e215d-e3c6-4f26-9d38-fb73f19a3d90
     - !<own> 5d06c87e-644b-431d-9ac5-704daeb87c8d
+    - !<own> 19367f52-d3f0-4ff7-9960-7d53de1d0425
   Components:
     - !<own> a7bb26b9-f43f-4859-bab8-b1832ec52ee0
-    - !<own> d067731b-0ed1-4a14-966a-c8354d87ff09
     - !<own> 87ea1bc0-501e-4373-a5f8-bdf21643eb84
 - !<SceneObject/c871df9b-e951-4c11-9ed9-aaf7f25a8252>
   PrefabRemaps:
@@ -1133,7 +1117,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Position: {x: 0.000000, y: 0.000000, z: -0.343040}
     Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 100.000000, y: 99.999985, z: 99.999985}
     HasSegmentScaleCompensation: false
@@ -1141,25 +1125,6 @@
     []
   Components:
     - !<own> 5db3209a-eed3-4f7f-9fd9-5199908d62a7
-- !<EyeColorVisual/d067731b-0ed1-4a14-966a-c8354d87ff09>
-  PrefabRemaps:
-    []
-  Name: Eye Color
-  Enabled: true
-  RenderOrder: 1
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> ad2b75ef-afe8-48f5-85b3-aa80995d8a93
-  EyeToRender: Both
-  FaceIndex: 0
-  TrackingScope: !<reference> 00000000-0000-0000-0000-000000000000
-  Mode: Color
-  RotationEnabled: false
 - !<SceneObject/d3ff6e59-bf96-4510-be3f-6ce96e190fb2>
   PrefabRemaps:
     []
@@ -1203,7 +1168,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: -0.000358, y: 14.368100, z: -0.001737}
+    Position: {x: -0.000358, y: 14.368100, z: -0.344777}
     Rotation: {x: -90.000000, y: 5.212557, z: -0.000000}
     Scale: {x: 100.000000, y: 100.000000, z: 99.999985}
     HasSegmentScaleCompensation: false

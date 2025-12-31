@@ -1,6 +1,7 @@
 
 //@input SceneObject kissObject
 //@input float threshold = 5.0f;
+//@input float wait = 5.0f;
 let kissTriggered = false;
 
 let event = script.createEvent("KissStartedEvent");
@@ -26,7 +27,7 @@ function animateKiss(){
         time += getDeltaTime();
         alphaRatio();
 
-        if(time > script.threshold) kissTriggered = false;
+        if(time > script.wait) kissTriggered = false;
         }
     else{
         time -= getDeltaTime();
