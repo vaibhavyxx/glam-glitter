@@ -12,7 +12,7 @@ metaInfo:
   hints:
     - lens_hint_blow_a_kiss
   tags:
-    []
+    - WINLS25
   lensName: Glam Queen
   lensDescriptors:
     []
@@ -23,8 +23,8 @@ metaInfo:
     - Mobile
     - Web
   platformBundlesEnabled: false
-  iconHash: ""
-  videoPreviewHash: ""
+  iconHash: d431bccd0e968997171c3c34eaa01c47
+  videoPreviewHash: f1f33b3d601102813459cc1499d7960e
   fromTemplateName: Default
   fromTemplateUrl: Lens Studio 5.17.1.25121920
   activationCamera: Front
